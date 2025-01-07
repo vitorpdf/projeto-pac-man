@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Fantasma
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Fantasma\ here.\r\n\ \r\n\ @author\ (Vitor\ Firmino,Gabriel\ Henrique,\ Gabriela\ \ )\ \r\n\ @version\ (1.1\ -\ 20/12/2024\ -\ Vers\u00E3o\ inicial\ oficial.)\r\n
+comment1.params=
+comment1.target=Fantasma()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Fantasma\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ movimentar()
+comment3.text=\r\n\ M\u00E9todo\ respons\u00E1vel\ por\ mover\ o\ fantasma.\ \r\n\ \ \ \ \ \ \ Optamos\ por\ criar\ um\ movimento\ imprevis\u00EDvel,\ em\ que\ em\ 10%\ das\ \r\n\ \ \ \ \ \ \ vezes\ o\ fantasma\ gira\ aleatoriamente\ entre\ -60\ e\ 60\ graus.\r\n\r\n
+comment4.params=
+comment4.target=void\ comer()
+comment4.text=\r\n\ Esse\ m\u00E9todo\ verifica\ se\ o\ fantasma\ colidiu\ com\ o\ jogador,\ se\ n\u00E3o\ houver\ colis\u00E3o\ \r\n\ retornar\u00E1\ null.\ Se\ houver\ colis\u00E3o,\ o\ jogador\ \u00E9\ removido\ do\ mundo,\ simulando\ que\ foi\ "comido"\r\n
+comment5.params=
+comment5.target=void\ morreu()
+comment5.text=\r\n\ M\u00E9todo\ respons\u00E1vel\ por\ definir\ o\ fantasma\ como\ morto.\r\n
+numComments=6

@@ -1,99 +1,47 @@
-import java.util.*;
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Representa o placar do jogo
- * 
- * @author Júlio César Alves
- * @version 2016-08-04
+ * Classe Placar: Gerencia a pontuação e as vidas no jogo.
  */
-public class Placar
-{
-    // pontos atuais do placar
-    private int pontos;
-    
-    // pontos ganhos a cada inimigo morto
-    private final int pontoPorInimigo = 50;
-    
-    // informacoes adicionais exibidas no placar
-    // cada elemento do conjunto contem um identificador da informacao e o valor da informacao
-    private Map<String, String> infoAdicionais;
+public class Placar extends Actor {
+
+    private int pontuacao;
+    private int vidas;
+
+    public Placar() {
+        pontuacao = 0;
+        vidas = 3; // Começa com 3 vidas, mas você pode alterar
+        atualizarImagem();
+    }
 
     /**
-     * Construtor do Placar
+     * Atualiza a imagem do placar exibida na tela.
      */
-    public Placar()
-    {
-        infoAdicionais = new HashMap<String, String>();
-        
-        inicializar();
+    private void atualizarImagem() {
+        GreenfootImage imagem = new GreenfootImage(200, 50); // Largura e altura do placar
+        imagem.setColor(Color.BLACK);
+        imagem.fillRect(0, 0, 200, 50);
+
+        imagem.setColor(Color.YELLOW);
+        imagem.setFont(imagem.getFont().deriveFont(18.0f)); // Define o tamanho da fonte
+
+        // Exibe a pontuação e as vidas no placar
+        imagem.drawString("Pontuação: " + pontuacao, 10, 20);
+        imagem.drawString("Vidas: " + vidas, 10, 40);
+
+        setImage(imagem);
+    }
+
+    /**
+     * Adiciona pontos ao placar.
+     */
+    public void adicionarPontos(int pontos) {
+        pontuacao += pontos;
+        atualizarImagem();
     }
     
-    /**
-     * Inicializa o placar. Limpa os valores das informacoes adicionais, mantendo as chaves
-     */
-    public void inicializar()
-    {        
-        pontos = 0;
-        
-        infoAdicionais.clear();
-    }
-    
-    /**
-     * Retorna o numero de pontos do placar
-     */
-    public int getPontos()
+    public void act()
     {
-        return pontos;
-    }
-    
-    /**
-     * Contabiliza a morte de um inimigo no placar
-     */
-    public void contarMorteInimigo()
-    {
-        pontos += pontoPorInimigo;
-    }
-    
-    /**
-     * Retorna um vetor com as informacoes adicionais do placar
-     */
-    public String[] getInfoAdicionais()
-    {
-        String[] info = new String[infoAdicionais.size()];
-        
-        int i = 0;
-        for (String texto : infoAdicionais.values())
-        {
-            info[i] = texto;
-            i++;
-        }
-        
-        return info;
-    }
-    
-    /**
-     * Adiciona uma nova informacao ao placar. Se ja existe informação com a mesma chave, apenas atualiza o valor
-     * 
-     * @param chave identificador da informacao a ser adicionada/atualizada
-     * @param valor valor a ser exibido no placar
-     */
-    public void adicionarInformacao(String chave, String valor)
-    {
-        infoAdicionais.put(chave, valor);
+        // Add your action code here.
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

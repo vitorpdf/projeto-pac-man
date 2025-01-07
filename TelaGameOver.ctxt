@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=TelaGameOver
+comment0.text=\r\n\ Classe\ TelaGameOver\:\ Exibe\ a\ tela\ de\ Game\ Over.\r\n\ \r\n\ Inclui\ o\ logotipo\ do\ Pac-Man\ e\ o\ texto\ "Game\ Over\!".\r\n\ @author\ (Vitor\ Firmino,Gabriel\ Henrique,\ Gabriela\ \ )\ \r\n\ @version\ (1.1\ -\ 20/12/2024\ -\ Vers\u00E3o\ inicial\ oficial.)\r\n
+comment1.params=
+comment1.target=TelaGameOver()
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ TelaGameOver.\r\n
+comment2.params=
+comment2.target=void\ prepare()
+comment2.text=\r\n\ Prepara\ o\ mundo\ adicionando\ o\ logotipo\ e\ o\ texto\ "Game\ Over\!".\r\n
+numComments=3
